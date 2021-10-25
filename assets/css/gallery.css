@@ -1,0 +1,55 @@
+.cover_image{
+    height: 400px;
+    background-color: #DBDBDB;
+}
+
+.gallery{
+    display: flex;
+    flex-direction: column;
+}
+.gallery_about{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.gallery_about_title{
+    font-size: 24px;
+}
+.gallery_about_message{
+    font-size:20px;
+}
+
+.gallery_work{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:30px 0;
+    margin: 0 150px;
+    border-bottom: solid 2px #D5C7AE;
+}
+.gallery_work_image{
+    height: 330px;
+    width: 500px;
+    background-color: #DBDBDB;
+}
+.gallery_work_about{
+    padding-left: 30px;
+    text-align: center;
+}
+
+.gallery_work_about_title{
+    font-size: 26px;
+}
+.gallery_work_about_author{
+    font-size: 18px;
+}
+.gallery_work_about_message{
+    font-size: 16px;
+}
+.gallery_work_last{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:30px 0 180px 0;
+    margin: 0 150px;
+}
