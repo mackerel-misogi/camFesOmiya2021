@@ -26,15 +26,6 @@ header {
  nav {
     margin: 0 0 0 auto;
  }
- ul {
-    list-style: none;
-    margin: 0;
-    display: flex;
- }
- li {
-    margin: 0 0 0 15px;
-    font-size: 14px;
- }
  main {
    text-align:center;
    padding:20px 0;
