@@ -16,13 +16,13 @@ body{
 .navi01{
     display: flex;
     justify-content: flex-start;
-    font-size: 26px;
+    font-size: 22px;
     margin: 0;
 }
 .navi02{
     display: flex;
     justify-content: flex-end;
-    font-size: 24px;
+    font-size: 20px;
     margin: 0;
 }
 #navi li {
