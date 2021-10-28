@@ -103,6 +103,12 @@ footer{
    padding-top: 30px;
    padding-bottom: 50px;
 }
+.delivery_about_title{
+   font-size: 24px;
+}
+.delivery_about_message{
+   font-size:20px;
+}
 .delivery_work{
    display: flex;
    justify-content: center;
