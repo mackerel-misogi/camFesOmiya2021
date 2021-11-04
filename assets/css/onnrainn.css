@@ -1,0 +1,129 @@
+body{
+    margin: 0px;
+    min-width: 1200px;
+ }
+ .header-bg{
+    background-color: #341800;
+    padding-bottom: 6px;
+ }
+ #navi{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    max-width: 100%;
+ }
+ .navi01{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 22px;
+    margin: 0;
+ }
+ .navi02{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+    margin: 0;
+ }
+ #navi li {
+  text-align: center;
+  list-style: none;
+ }
+ 
+ .navi02 li{
+    width: 150px;
+    border-left:solid 1px #341800;
+ }
+ #navi a{
+    display: block;
+ }
+ .navi01 a{
+    text-decoration: none;
+    color: #000;
+    outline:none;
+    padding:13px 0;
+ }
+ .navi02 a {
+    text-decoration: none;
+    color: #000;
+    outline:none;
+    padding:15px 0;
+ }
+ .navi02 a:hover{
+    background-color: #341800;
+    color:#fff;
+ }
+ .bgcolor02 a {
+    text-decoration: none;
+    color: #fff;
+    outline:none;
+    padding:15px 0;
+ }
+ .bgcolor02 a:hover{
+    background-color: #fff;
+    color:#000;
+ }
+ 
+ .bgcolor01{
+    margin: 0;
+ }
+ .bgcolor02{
+    background-color: #341800;
+    margin: 0;
+ }
+ 
+ footer{
+    background-color: #341800;
+    height: 280px;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+ }
+ .footer_title{
+    font-size:24px;
+    margin-top: 50px;
+ }
+ .footer_message{
+    font-size: 20px;
+ }
+ 
+ 
+ 
+ .cover_image{
+    height: 400px;
+    background-color: #DBDBDB;
+ }
+ .content{
+    display: flex;
+    flex-direction: column;
+ }
+ .content_about{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+ }
+ .content_about_title{
+    font-size: 24px;
+ }
+ .content_about_message{
+    font-size:20px;
+ }
+ 
+ .content_work{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:30px 0;
+    margin: 0 150px;
+    flex-direction: column;
+ }
+ .content_work_image{
+    height: 330px;
+    width: 500px;
+    background-color: #DBDBDB;
+ }
+ .content_work_about{
+   
+    text-align: center;
+ }
