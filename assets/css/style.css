@@ -12,12 +12,14 @@
 }
 .main_about_message{
     font-size:20px;
+    overflow-wrap: break-word;
+    margin: 0 20px;
 }
 .thema{
     display: flex;
     flex-direction: column;
     background-color: #D5C7AE;
-    margin: 0 110px;
+    margin: 0 90px;
 }
 .thema_about{
     text-align: center;
@@ -29,10 +31,13 @@
 }
 .thema_about_message{
     font-size:20px;
+    overflow-wrap: break-word;
+
 }
 .active{    
     display: flex;
     flex-direction: column;
+    margin: 0;
 }
 
 .active_about{
@@ -57,4 +62,23 @@
     padding-left: 30px;
     text-align: center;
     font-size:20px;
+    overflow-wrap: break-word;
+}
+@media (max-width:600px) {
+    .thema{
+        margin: 0 10px;
+    }
+    .active{
+        margin: 0;
+    }
+    .active_about{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+    }
+    .active_about_message{
+        text-align: center;
+        padding-left: 0;
+    }
 }
