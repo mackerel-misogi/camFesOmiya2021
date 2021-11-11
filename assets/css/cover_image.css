@@ -138,9 +138,9 @@
   }
   
   .carousel__navigation {
-    position: absolute;
+    position: relative;
     right: 0;
-    bottom: 30px;
+    bottom: 0;
     left: 0;
     text-align: center;
   }
