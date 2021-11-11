@@ -1,17 +1,26 @@
 body{
     margin: 0px;
-    min-width: 1200px;
 }
+/*header*/
 .header-bg{
     background-color: #341800;
-    padding-bottom: 6px;
+    height: 6px;
+    width: 100%;
+    position: fixed;
+    top:0;
+    z-index:55;
 }
 #navi{
+    background-color: #FFF;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0;
-    max-width: 100%;
+    margin-top: 6px;
+    width: 100%;
+    position: fixed;
+    top:0px;
+    z-index:55;
+    border-bottom: solid 1px #341800;
 }
 .navi01{
     display: flex;
@@ -30,10 +39,6 @@ body{
   list-style: none;
 }
 
-.navi02 li{
-    width: 150px;
-    border-left:solid 1px #341800;
-}
 #navi a{
     display: block;
 }
@@ -71,7 +76,7 @@ body{
     background-color: #341800;
     margin: 0;
 }
-
+/*fotter*/
 footer{
     background-color: #341800;
     height: 280px;
@@ -86,4 +91,258 @@ footer{
 }
 .footer_message{
     font-size: 20px;
+}
+/*checkbox*/
+.btn_hide{
+    display: none;
+}
+
+@media (min-width:1024px){
+    .navi02{
+        padding-left: 0;
+    }
+    .navi02 li{
+        width: 150px;
+        border-left:solid 1px #341800;
+    }
+}
+
+@media (max-width:1023px) {
+    .header-bg{
+        background-color: #341800;
+        height: 6px;
+        width: 100%;
+        position: fixed;
+        top:0;
+        z-index:55;
+    }
+    #navi{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navi01{
+        display: flex;
+        justify-content: flex-start;
+        font-size: 22px;
+        margin: 0;
+    }
+    .navi02{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right:-100%;
+        z-index: +1;
+        margin: 0;
+        padding: 66px 20px 0px 20px;
+        height: 100%;
+        width: 340px;
+        border-top: solid 6px #341800;
+        background-color: #341800;
+        transition: all 0.5s;
+    }
+    #navi li {
+      text-align: center;
+      list-style: none;
+    }
+    #navi a{
+        display: block;
+    }
+    .navi01 a{
+        text-decoration: none;
+        color: #000;
+        outline:none;
+        padding:13px 0;
+    }
+    .navi02 a {
+        color:#FFF;
+        border-bottom: solid 1px #FFF;
+    }
+    .navi02 a:hover{
+        background-color: #fff;
+        color:#000;
+    }
+    .bgcolor02 a {
+        background-color: #341800;
+    }
+    
+    .bgcolor01{
+        margin: 0;
+    }
+    .bgcolor02{
+        background-color: #341800;
+    }
+    
+    .navi_btn {
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: flex;
+        margin-top: 6px;
+        height: 60px;
+        width: 60px;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+        background-color: #341800;
+        -webkit-transition: 0.3s ease;
+        transition: 0.3s ease;
+    }
+    .navi_btn span,
+    .navi_btn span:before,
+    .navi_btn span:after {
+        content: '';
+        display: block;
+        height: 3px;
+        width: 25px;
+        border-radius: 3px;
+        background-color: #ffffff;
+        position: absolute;
+        -webkit-transition: 0.3s ease-in;
+        transition: 0.3s ease-in;
+    }
+    .navi_btn span:before{
+        bottom:8px;
+    }
+    .navi_btn span:after{
+        top:8px;
+    }
+    #toggle:checked ~ .navi_btn span{
+        background-color: rgba(255, 255, 255, 0);
+    }
+    #toggle:checked + .navi_btn span::before{
+        bottom:0;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    #toggle:checked + .navi_btn span::after{
+        top:0;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+    #toggle:checked ~ .navi02{
+        right:0;
+    }
+}
+
+@media (max-width:600px) {
+    .header-bg{
+        background-color: #341800;
+        height: 6px;
+        width: 100%;
+        position: fixed;
+        top:0;
+        z-index:55;
+    }
+    #navi{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navi01{
+        display: flex;
+        justify-content: flex-start;
+        font-size: 22px;
+        margin: 0;
+    }
+    .navi02{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right:-100%;
+        z-index: +1;
+        margin: 0;
+        padding: 66px 20px 0px 20px;
+        height: 100%;
+        width: 100%;
+        border-top: solid 6px #341800;
+        background-color: #341800;
+        transition: all 0.5s;
+    }
+    #navi li {
+      text-align: center;
+      list-style: none;
+    }
+    #navi a{
+        display: block;
+    }
+    .navi01 a{
+        text-decoration: none;
+        color: #000;
+        outline:none;
+        padding:13px 0;
+    }
+    .navi02 a {
+        color:#FFF;
+        border-bottom: solid 1px #FFF;
+    }
+    .navi02 a:hover{
+        background-color: #fff;
+        color:#000;
+    }
+    .bgcolor02 a {
+        background-color: #341800;
+    }
+    
+    .bgcolor01{
+        margin: 0;
+    }
+    .bgcolor02{
+        background-color: #341800;
+    }
+    
+    .navi_btn {
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: flex;
+        margin-top: 6px;
+        height: 60px;
+        width: 60px;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+        background-color: #341800;
+        -webkit-transition: 0.3s ease;
+        transition: 0.3s ease;
+    }
+    .navi_btn span,
+    .navi_btn span:before,
+    .navi_btn span:after {
+        content: '';
+        display: block;
+        height: 3px;
+        width: 25px;
+        border-radius: 3px;
+        background-color: #ffffff;
+        position: absolute;
+        -webkit-transition: 0.3s ease-in;
+        transition: 0.3s ease-in;
+    }
+    .navi_btn span:before{
+        bottom:8px;
+    }
+    .navi_btn span:after{
+        top:8px;
+    }
+    #toggle:checked ~ .navi_btn span{
+        background-color: rgba(255, 255, 255, 0);
+    }
+    #toggle:checked + .navi_btn span::before{
+        bottom:0;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    #toggle:checked + .navi_btn span::after{
+        top:0;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+    #toggle:checked ~ .navi02{
+        right:0;
+    }
 }
