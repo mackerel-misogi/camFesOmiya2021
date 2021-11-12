@@ -80,6 +80,7 @@ body{
 footer{
     background-color: #341800;
     height: 280px;
+    width: 100%;
     text-align: center;
     color: #fff;
     display: flex;
@@ -227,7 +228,7 @@ footer{
     }
 }
 
-@media (max-width:600px) {
+@media screen and (max-width:600px) {
     .header-bg{
         background-color: #341800;
         height: 6px;
