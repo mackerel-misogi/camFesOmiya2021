@@ -227,7 +227,7 @@ footer{
     }
 }
 
-@media (max-width:896px) {
+@media (max-width:600px) {
     .header-bg{
         background-color: #341800;
         height: 6px;
