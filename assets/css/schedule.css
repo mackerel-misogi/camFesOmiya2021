@@ -1,0 +1,17 @@
+.schedule{
+    display: flex;
+    flex-direction: column;
+}
+.schedule_about{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.schedule_about_title{
+    font-size: 24px;
+}
+.schedule_about_message{
+    font-size:20px;
+    overflow-wrap: break-word;
+    margin: 0 20px;
+}
