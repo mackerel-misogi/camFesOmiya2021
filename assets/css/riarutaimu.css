@@ -12,6 +12,8 @@
 }
 .delivery_about_message{
    font-size:20px;
+    overflow-wrap: break-word;
+    margin: 0 20px;
 }
 .delivery_work{
    display: flex;
