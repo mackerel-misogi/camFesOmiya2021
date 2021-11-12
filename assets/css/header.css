@@ -351,5 +351,7 @@ footer{
     }
     .footer_message{
         font-size:18px;
+        overflow-wrap: break-word;
+        margin: 0 20px;
     }
 }
