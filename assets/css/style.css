@@ -79,5 +79,6 @@
     .active_about_message{
         text-align: center;
         padding-left: 0;
+        font-size:18px;
     }
 }
