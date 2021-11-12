@@ -12,6 +12,8 @@
  }
  .content_about_message{
     font-size:20px;
+    overflow-wrap: break-word;
+    margin: 0 20px;
  }
  
  .content_work{
@@ -30,4 +32,10 @@
  .content_work_about{
    
     text-align: center;
+ }
+
+ @media (max-width:896px) {
+    .content_work_image{
+       width:100%;
+    }
  }
