@@ -1,0 +1,83 @@
+.comicPage{
+    display: flex;
+    flex-direction: column;
+}
+.comicPage_about_bg{
+    padding-bottom: 20px;
+}
+.comicPage_about{
+    text-align: center;
+    background-color: #341800;
+    color: #FFF;
+    width: 100%;
+    margin-top: 10px;
+}
+.comicPage_about2{
+    text-align: center;
+    background-color: #341800;
+    color: #FFF;
+    width: 100%;
+}
+.comicPage_about_title{
+    font-size: 24px;
+    text-align: center;
+}
+.comicPage_about_author{
+    font-size:24px;
+}
+#comicPage_navi_top{
+    width: 100%;
+    background-color: #BA9153;
+}
+.comicPage_navi_top{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+.comicPage_navi_top li{
+    font-size: 24px;
+    padding: 15px 0;
+    border: solid 2px #FFF;
+    flex-grow: 1;
+}
+.comicPage_navi_top a{
+    text-decoration: none;
+    color: #FFF;
+    outline:none;
+    padding: 30px 0;
+}
+
+.comicPage_image_bg{
+    background-color: #696969;
+    display: flex;
+    justify-content: center;
+}
+.comicPage_image{
+    background-color: #FFF;
+    margin:30px 0;
+    width: 540px;
+    height: 810px;
+    padding-bottom: 500px;
+}
+
+#comicPage_navi_end{
+    width: 100%;
+    background-color: #BA9153;
+}
+.comicPage_navi_end{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+.comicPage_navi_end li{
+    font-size: 24px;
+    padding: 15px 0;
+    border: solid 2px #FFF;
+    flex-grow: 1;
+}
+.comicPage_navi_end a{
+    text-decoration: none;
+    color: #FFF;
+    outline:none;
+    padding: 15px 0;
+}
