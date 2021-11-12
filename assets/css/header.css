@@ -97,7 +97,7 @@ footer{
     display: none;
 }
 
-@media (min-width:1024px){
+@media screen and(min-width:1024px){
     .navi02{
         padding-left: 0;
     }
@@ -107,7 +107,7 @@ footer{
     }
 }
 
-@media (max-width:1023px) {
+@media screen and(max-width:1023px) {
     .header-bg{
         background-color: #341800;
         height: 6px;
@@ -227,7 +227,7 @@ footer{
     }
 }
 
-@media (max-width:639px) {
+@media screen and(max-width:896px) {
     .header-bg{
         background-color: #341800;
         height: 6px;
