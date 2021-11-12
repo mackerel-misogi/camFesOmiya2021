@@ -349,4 +349,7 @@ footer{
     #toggle:checked ~ .navi02{
         right:0;
     }
+    .footer_message{
+        font-size:18px;
+    }
 }
