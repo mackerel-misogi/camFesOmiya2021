@@ -229,6 +229,9 @@ footer{
 }
 
 @media screen and (max-width:896px) {
+    body{
+        width: 100%;
+    }
     .header-bg{
         background-color: #341800;
         height: 6px;
