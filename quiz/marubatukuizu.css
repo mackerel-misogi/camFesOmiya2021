@@ -31,5 +31,8 @@
     margin:0 auto;
   }
   body {
-   background:#AC9676;
+   background-image:assets/image/start.jpg;
+   background-repeat: no-repeat;
+   background-position:50% 50%;
+   background-size:contain;
  }
