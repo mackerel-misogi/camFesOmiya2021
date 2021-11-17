@@ -32,7 +32,7 @@
   }
  body {
    /* 画像ファイルの指定 */
-   background-image: url("Q1.jpg");
+   background-image: url("quiz_image/start.jpg");
     
    /* 画像を常に天地左右の中央に配置 */
    background-position: center center;
