@@ -1,7 +1,6 @@
 .answer {
     display: flex;
     flex-direction: column;
-    color:#fff;
 }
 .answer_about_title{
     font-size:75px;
