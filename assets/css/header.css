@@ -79,12 +79,12 @@ body{
 /*fotter*/
 footer{
     background-color: #341800;
-    height: 280px;
     width: 100%;
     text-align: center;
     color: #fff;
     display: flex;
     flex-direction: column;
+    padding-bottom: 30px;
 }
 .footer_title{
     font-size:24px;
@@ -92,6 +92,15 @@ footer{
 }
 .footer_message{
     font-size: 20px;
+    margin: 0 30px;
+}
+
+.footer_link{
+    font-size:20px;
+    padding: 20px 0;
+}
+.footer_link a{
+    color:#0097a7;
 }
 /*checkbox*/
 .btn_hide{
