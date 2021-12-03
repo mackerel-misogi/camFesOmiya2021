@@ -13,8 +13,9 @@
 }
 
 .plan_box_image{
-    padding-bottom: 150px;
-    background-color: #DBDBDB;
+    object-fit: cover;
+    height: 200px;
+    width: 300px;
 }
 .plan_box_title{
     text-align: center;
