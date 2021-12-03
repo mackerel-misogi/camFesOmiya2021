@@ -34,6 +34,13 @@
     text-align: center;
  }
 
+.introduction{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-right:20%;
+}
+
  @media (max-width:896px) {
     .content_work_image{
        width:100%;
