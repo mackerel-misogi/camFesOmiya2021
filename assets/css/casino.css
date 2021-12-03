@@ -1,0 +1,25 @@
+.ruhru{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;      
+    justify-content: center;
+      
+  }
+.casino_about_title{
+    text-align: center;
+    font-size: 48px;
+    color:White;
+
+}
+.ruhru-content{
+    color:WHITE;
+    width: calc(100% /3);
+    padding: 50px 50px;
+    text-align: center;
+  }
+.casino{
+    background-color: black;
+    background-image: url(https://images.unsplash.com/photo-1629982526780-e454c2816b54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
+    background-repeat:no-repeat;  
+    background-position: right
+}
