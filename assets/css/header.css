@@ -38,7 +38,6 @@ body{
   text-align: center;
   list-style: none;
 }
-
 #navi a{
     display: block;
 }
@@ -76,6 +75,13 @@ body{
     background-color: #341800;
     margin: 0;
 }
+
+.header_image{
+    width: 60px;
+    height: 50px;
+    object-fit: cover;
+    margin: 5px 10px 5px -30px;
+}
 /*fotter*/
 footer{
     background-color: #341800;
@@ -112,7 +118,7 @@ footer{
         padding-left: 0;
     }
     .navi02 li{
-        width: 150px;
+        width: 135px;
         border-left:solid 1px #341800;
     }
 }
