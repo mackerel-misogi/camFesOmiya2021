@@ -34,7 +34,22 @@
     text-align: center;
  }
 
-.introduction{
+.introduction.a{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.introduction.b{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.introduction.c{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.introduction.d{
    display: flex;
    justify-content: center;
    align-items: center;
@@ -48,4 +63,18 @@
 
 .introduction{
    text-align: center;
+}
+
+.student__about{
+   text-align: center;
+   padding-top: 30px;
+   padding-bottom: 50px;
+}
+.student__about_title{
+   font-size: 24px;
+}
+.student__about_message{
+   font-size:20px;
+    overflow-wrap: break-word;
+    margin: 0 20px;
 }
