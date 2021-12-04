@@ -61,6 +61,66 @@
     }
  }
 
+
+.flex {
+    @media screen and (min-width: 897px) {
+        display: flex; /*横並び*/
+    }
+    @media screen and (max-width: 896px) {
+        text-align: center;
+    }
+}
+.flex .image {
+    @media screen and (min-width: 897px) {
+        width: 1600px; /*画像サイズ指定*/
+  　　　　　　　　　　　　margin: 0;
+  　　　　　　　　　　　　padding: 0;
+  　　　　　　　　　　　　overflow: hidden;
+  　　　　　　　　　　　　position: relative;
+    }
+    @media screen and (max-width: 896px) {
+        width: 160px; /*画像サイズ指定*/
+  　　　　　　　　　　　　margin: 0;
+  　　　　　　　　　　　　padding: 0;
+  　　　　　　　　　　　　overflow: hidden;
+  　　　　　　　　　　　　position: relative;
+    }
+}
+.flex .right　{
+    @media screen and (min-width: 897px) {
+        margin: 0 0 0 20px;
+  　　　　　　　　　　　　padding: 0;
+    }
+    @media screen and (max-width: 896px) {
+        margin: 0 0 0 0;
+  　　　　　　　　　　　　padding: 0;
+    }
+}
+.flex .title 　{
+    @media screen and (min-width: 897px) {
+        margin: 0;
+  　　　　　　　　　　　　padding: 0;
+  　　　　　　　　　　　　font-weight: bold;
+  　　　　　　　　　　　　font-size: 18px;
+    }
+    @media screen and (max-width: 896px) {
+        margin: 0;
+  　　　　　　　　　　　　padding: 0;
+  　　　　　　　　　　　　font-weight: bold;
+  　　　　　　　　　　　　font-size: 18px;
+    }
+}　　
+.flex .text　{
+    @media screen and (min-width: 897px) {
+        margin: 10px 0 0;
+  　　　　　　　　　　　　padding: 0;
+    }
+    @media screen and (max-width: 896px) {
+        margin: 0 0 0;
+  　　　　　　　　　　　　padding: 0;
+    }
+}
+
 .introduction{
    text-align: center;
 }
