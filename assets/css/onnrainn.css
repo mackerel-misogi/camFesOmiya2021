@@ -75,3 +75,49 @@
     overflow-wrap: break-word;
     margin: 0 20px;
 }
+
+.flex {
+  display: flex; /*横並び*/
+}
+.flex .image {
+  width: 640px; /*画像サイズ指定*/
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+.flex .right {
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+.flex .title {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+.flex .text {
+  margin: 10px 0 0;
+  padding: 0;
+}
+
+/* 画像を天地中央表示 */
+
+.flex .image {
+  overflow: hidden;
+  position: relative;
+}
+.flex .image::before {
+  content: "";
+  display: block;
+  padding-top: 58%;
+}
+.flex .image img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
