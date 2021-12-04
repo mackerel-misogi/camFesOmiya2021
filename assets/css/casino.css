@@ -1,3 +1,7 @@
+.card-image{
+  display: flex;
+}
+
 .ruhru{
     display: flex;
     flex-wrap: wrap;
@@ -13,7 +17,7 @@
 }
 .ruhru-content{
     color:WHITE;
-    width: calc(100% /3);
+    width: calc(100% /2);
     padding: 50px 50px;
     text-align: center;
   }
@@ -23,3 +27,128 @@
     background-repeat:no-repeat;  
     background-position: right
 }
+.iframe-placeholder
+{
+   background: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100% 100%"><text fill="%23FF0000" x="50%" y="50%" font-family="\'Lucida Grande\', sans-serif" font-size="24" text-anchor="middle"> Now Loading </text></svg>') 0px 0px no-repeat;
+}
+
+/*ここから画像カルーセル*/
+.container {
+  height: 300px;
+  width: 600px;
+  top: 60px;
+  left: calc(50% - 300px);
+  display: flex;
+}
+
+.card {
+  display: flex;
+  height: 280px;
+  width: 200px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+/*   margin-left: -50px; */
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+  text-align: center;
+}
+
+.card:not(:first-child) {
+    margin-left: -50px;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+.card:hover ~ .card {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+}
+
+.title {
+  color: rgb(0, 0, 0);
+  font-weight: 300;
+  position: absolute;
+  text-align: right;
+  right: 20px;
+  top: 3px;
+}
+
+
+
+
+
+
+
+.circle {
+  position: absolute;
+  top: 150px;
+  left: calc(50% - 60px);
+}
+
+.stroke {
+  stroke: white;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 360;
+  transition: 0.6s ease-out;
+}
+
+svg {
+  fill: #17141d;
+  stroke-width: 2px;
+}
+
+.card:hover .stroke {
+  stroke-dashoffset: 100;
+  transition: 0.6s ease-out;
+}
+
+.card-text{
+  text-align: center;
+  padding: 10% 4%;
+}
+/*ここまで画像カルーセル*/
+
+
+
+@media screen and (max-width: 479px) { /*ウィンドウ幅が最大479pxまでの場合に適用*/
+  .ruhru-content{
+    color:WHITE;
+    width: calc(100% /1);
+    padding: 50px 50px;
+    text-align: center;
+  }
+
+  .container {
+    height: 300px;
+    width: 300px;
+    top: 60px;
+    left: calc(50% - 300px);
+    display: flex;
+  }
+
+  .card {
+    display: flex;
+    height: 140px;
+    width: 100px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: -1rem 0 3rem #000;
+  /*   margin-left: -50px; */
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 0px;
+    text-align: center;
+  }
+
+  .card-text{
+    text-align: center;
+    padding: 10% 4%;
+  }
+
+  }
