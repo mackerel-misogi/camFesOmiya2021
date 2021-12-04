@@ -19,32 +19,126 @@
     justify-content: center;
     align-items: center;
     padding:30px 0;
-    margin: 0 150px;
     border-bottom: solid 2px #D5C7AE;
 }
 .gallery_work_image{
-    height: 330px;
-    width: 500px;
-    background-color: #DBDBDB;
+    margin: 0;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
 }
+.gallery_work_image1{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-left: 0;
+}
+.gallery_work_image2{
+    margin-left: 20px;
+}
+.gallery_work_image3{
+    height: 100%;
+    max-height: 500px;
+    width: auto;
+}
+.gallery_work_image_colum{
+    display: flex;
+    flex-flow: column;
+}
+.width{
+    width: 500px;
+}
+.height{
+    height: 500px;
+}
+
 .gallery_work_about{
-    padding-left: 30px;
     text-align: center;
+    margin-left: 30px;
+}
+.gallery_work_about1{
+    text-align: center;
+    margin-left: 30px;
+}
+.gallery_work_about2{
+    text-align: center;
+    margin-left: 50px;
+}
+.gallery_work_about3{
+    margin: 0;
 }
 
 .gallery_work_about_title{
     font-size: 26px;
+    border-bottom: solid 2px #D5C7AE;
+    word-wrap: break-word;
 }
 .gallery_work_about_author{
     font-size: 18px;
 }
 .gallery_work_about_message{
-    font-size: 16px;
+    font-size: 17px;
 }
-.gallery_work_last{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding:30px 0 180px 0;
-    margin: 0 150px;
+/*アコーディオン用css*/
+/*アコーディオン全体*/
+.accordion-area{
+    width: 90%;
+    list-style: none;
+    margin:0 auto;
+}
+
+.accordion-area li{
+    margin: 10px 0;
+}
+
+
+/*アコーディオンバー*/
+.accordion_bar{
+    position: relative;
+    cursor: pointer;
+    margin-top: -50px;
+    width: 100%;
+    height:150px;
+    background: linear-gradient(#ffffff18,#f0f0f0);
+    border-bottom: solid 2px #D5C7AE;
+}
+.accordion_bar_i{
+    position: absolute;
+    right: 45%;
+    bottom:30%;
+    width: 50px;
+    height: 50px;
+    border-right: 5px solid #666;
+    border-bottom: 5px solid #666;
+    transform: rotate(45deg);
+    z-index: 1;
+}
+/*アイコンの>/
+/*　closeというクラスがついたら.gallery_bar_barを形状変化　*/
+.accordion_bar.close{
+    margin-top: -30px;
+}
+.accordion_bar.close .accordion_bar_i{
+    transform: rotate(225deg);
+}
+/*アコーディオンで現れるエリア*/
+.box {
+    margin: 0;
+    display: none;/*はじめは非表示*/
+}
+
+/*クイズの答え表示用アコーディオン*/
+.answer_bar{
+    background-color: #dadada;
+    height: 500px;
+    text-align: center;
+    writing-mode: vertical-rl;
+    cursor: pointer;
+}
+.gallery_work_image_answer{
+    object-fit: cover;
+    object-position: 0 0;
+    height: 500px;
+    width: 200px;
+    display: none;
 }
