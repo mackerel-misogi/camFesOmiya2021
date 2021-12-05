@@ -34,150 +34,43 @@
     text-align: center;
  }
 
-.introduction.a{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-.introduction.b{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-.introduction.c{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-.introduction.d{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-
- @media (max-width:896px) {
-    .content_work_image{
-       width:100%;
-    }
- }
-
-
-.flex {
-    @media screen and (min-width: 897px) {
-        display: flex; /*横並び*/
-    }
-    @media screen and (max-width: 896px) {
-        text-align: center;
-    }
-}
-.flex .image {
-    @media screen and (min-width: 897px) {
-        width: 1600px; /*画像サイズ指定*/
-  　　　　　　　　　　　　margin: 0;
-  　　　　　　　　　　　　padding: 0;
-  　　　　　　　　　　　　overflow: hidden;
-  　　　　　　　　　　　　position: relative;
-    }
-    @media screen and (max-width: 896px) {
-        width: 160px; /*画像サイズ指定*/
-  　　　　　　　　　　　　margin: 0;
-  　　　　　　　　　　　　padding: 0;
-  　　　　　　　　　　　　overflow: hidden;
-  　　　　　　　　　　　　position: relative;
-    }
-}
-.flex .right　{
-    @media screen and (min-width: 897px) {
-        margin: 0 0 0 20px;
-  　　　　　　　　　　　　padding: 0;
-    }
-    @media screen and (max-width: 896px) {
-        margin: 0 0 0 0;
-  　　　　　　　　　　　　padding: 0;
-    }
-}
-.flex .title 　{
-    @media screen and (min-width: 897px) {
-        margin: 0;
-  　　　　　　　　　　　　padding: 0;
-  　　　　　　　　　　　　font-weight: bold;
-  　　　　　　　　　　　　font-size: 18px;
-    }
-    @media screen and (max-width: 896px) {
-        margin: 0;
-  　　　　　　　　　　　　padding: 0;
-  　　　　　　　　　　　　font-weight: bold;
-  　　　　　　　　　　　　font-size: 18px;
-    }
-}　　
-.flex .text　{
-    @media screen and (min-width: 897px) {
-        margin: 10px 0 0;
-  　　　　　　　　　　　　padding: 0;
-    }
-    @media screen and (max-width: 896px) {
-        margin: 0 0 0;
-  　　　　　　　　　　　　padding: 0;
-    }
-}
-
-.introduction{
-   text-align: center;
-}
-
 .student__about{
    text-align: center;
    padding-top: 30px;
    padding-bottom: 50px;
+   margin: 0 100px;
+   font-size:20px;
 }
 .student__about_message{
-   font-size:20px;
     overflow-wrap: break-word;
-    margin: 0 20px;
 }
 
-.flex {
-  display: flex; /*横並び*/
+.flex{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding:30px 0;
+   margin: 0;
 }
-.flex .image {
-  width: 1600px; /*画像サイズ指定*/
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  position: relative;
+.content_image{
+   object-fit: cover;
+   height: 222px;
+   width: 400px;
 }
-.flex .right {
-  margin: 0 0 0 20px;
-  padding: 0;
+.right{
+   text-align: center;
+    font-size:20px;
+    color:#272727;
 }
-.flex .title {
-  margin: 0;
-  padding: 0;
-  font-weight: bold;
-  font-size: 18px;
+.text{
+   margin: 0 20px;
+    overflow-wrap: break-word;
 }
-.flex .text {
-  margin: 10px 0 0;
-  padding: 0;
-}
-
-/* 画像を天地中央表示 */
-
-.flex .image {
-  overflow: hidden;
-  position: relative;
-}
-.flex .image::before {
-  content: "";
-  display: block;
-  padding-top: 58%;
-}
-.flex .image img {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
+@media (max-width:896px) {
+   .flex{
+      display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+   }
 }
