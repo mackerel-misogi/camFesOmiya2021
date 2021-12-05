@@ -45,12 +45,21 @@
   width: 100%;
   height: 100%;
 }
-.delivery_work_image{
-    @media screen and (min-width: 897px) {
-        height: 330px;
-   　　　　　　　　　　margin : 0 auto;
-    }
-    @media screen and (max-width: 896px) {
-        margin-right: auto;
-    }
+@media screen and (max-width:896px) {
+   .delivery_work{
+      margin: 30px;
+      padding:0
+   }
+   .delivery_work_image{
+      position: relative;
+        width: 100%;
+        padding-top: calc(315 / 560 * 100%);
+   }
+   .delivery_work_image iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+  }
 }
