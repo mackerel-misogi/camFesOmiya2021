@@ -91,4 +91,7 @@
         padding-left: 0;
         font-size:18px;
     }
+    .active_message br{
+        display: none;
+    }
 }
