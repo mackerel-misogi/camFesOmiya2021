@@ -23,10 +23,7 @@
    margin: 0 150px;
    flex-direction: column;
 }
-.delivery_work_image{
-   height: 330px;
-   margin : 0 auto;
-}
+
 .delivery_work_about{
   
    text-align: center;
@@ -43,4 +40,13 @@
   right: 0;
   width: 100%;
   height: 100%;
+}
+.delivery_work_image{
+    @media screen and (min-width: 897px) {
+        height: 330px;
+   　　　　　　　　　　margin : 0 auto;
+    }
+    @media screen and (max-width: 896px) {
+        margin-right: auto;
+    }
 }
