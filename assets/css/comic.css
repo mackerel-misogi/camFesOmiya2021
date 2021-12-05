@@ -19,6 +19,7 @@
 .comic_about_message{
     font-size:20px;
     overflow-wrap: break-word;
+    padding:20px 0;
     margin: 0 20px -25px 20px;
     background-color: #BA9153;
 }
@@ -47,14 +48,18 @@
     background-color: #CE651B;
 }
 .comic_work4{
-    visibility: hidden;
+    background-color: #A5AB31;
 }
 .comic_work_image{
+    object-fit: cover;
+    object-position: 50% 0;
     margin: 10px 10px 0 10px;
-    padding: 0 130px 140px 130px;
-    background-color: gray;
+    width: 260px;
+    height: 140px;
 }
+
 .comic_work_title{
+    font-size: 18px;
     margin: 0;
     text-decoration: none;
     color: #000;
