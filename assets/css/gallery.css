@@ -142,3 +142,57 @@
     width: 230px;
     display: none;
 }
+
+@media (max-width:1023px){
+    .gallery_work{
+        flex-direction: column;
+    }
+    .iframe_size1{
+        position: relative;
+          width: 100%;
+          padding-top: calc(405 / 720 * 100%);
+     }
+     .iframe_size1 iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .iframe_size2{
+        position: relative;
+          width: 100%;
+          padding-top: calc(360 / 640 * 100%);
+     }
+     .iframe_size2 iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .iframe_size3{
+        position: relative;
+          width: 100%;
+          padding-top: calc(430 / 745 * 100%);
+     }
+     .iframe_size3 iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .iframe_size4{
+        position: relative;
+          width: 100%;
+          padding-top: calc(400 / 620 * 100%);
+     }
+     .iframe_size4 iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
