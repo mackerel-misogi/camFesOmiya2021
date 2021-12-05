@@ -19,10 +19,11 @@
     justify-content: center;
     align-items: center;
     padding:30px 0;
+    margin: 0 auto;
     border-bottom: solid 2px #D5C7AE;
 }
 .gallery_work_image{
-    margin: 0;
+    margin: 0 auto;
     width: 100%;
     max-width: 500px;
     height: auto;
@@ -35,11 +36,6 @@
 }
 .gallery_work_image2{
     margin-left: 20px;
-}
-.gallery_work_image3{
-    height: 100%;
-    max-height: 500px;
-    width: auto;
 }
 .gallery_work_image_colum{
     display: flex;
@@ -69,14 +65,17 @@
 }
 
 .gallery_work_about_title{
+    text-align: center;
     font-size: 26px;
     border-bottom: solid 2px #D5C7AE;
     word-wrap: break-word;
 }
 .gallery_work_about_author{
+    text-align: center;
     font-size: 18px;
 }
 .gallery_work_about_message{
+    text-align: center;
     font-size: 17px;
 }
 /*アコーディオン用css*/
@@ -128,13 +127,6 @@
 }
 
 /*クイズの答え表示用アコーディオン*/
-.answer_bar{
-    background-color: #dadada;
-    height: 500px;
-    text-align: center;
-    writing-mode: vertical-rl;
-    cursor: pointer;
-}
 .gallery_work_image_answer{
     object-fit: cover;
     object-position: 0 0;
@@ -142,10 +134,48 @@
     width: 230px;
     display: none;
 }
-
+@media (min-width:1024px){
+    .answer_bar{
+        background-color: #dadada;
+        height: 500px;
+        text-align: center;
+        writing-mode: vertical-rl;
+        cursor: pointer;
+    }
+    .gallery_work_image3{
+        height: 100%;
+        max-height: 500px;
+        width: auto;
+    }
+}
 @media (max-width:1023px){
     .gallery_work{
         flex-direction: column;
+    }
+    .answer_bar{
+        background-color: #dadada;
+        width: 100%;
+        max-width: 500px;
+        text-align: center;
+        cursor: pointer;
+    }
+    .gallery_work_image3{
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+    }
+    .width{
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+    }
+    .height{
+        height: 100%;
+        max-height: 500px;
+        width: auto;
+    }
+    br{
+        display: none;
     }
     .iframe_size1{
         position: relative;
