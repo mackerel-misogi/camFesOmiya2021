@@ -1,6 +1,7 @@
- .content{
+  .content{
     display: flex;
     flex-direction: column;
+    margin-bottom: 90px;
  }
  .content_about{
     text-align: center;
@@ -20,17 +21,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:30px 0;
-    margin: 0 150px;
-    flex-direction: column;
+    margin: 0 auto;
  }
  .content_work_image{
-    height: 330px;
-    width: 500px;
-    background-color: #DBDBDB;
+   object-fit: cover;
+   width: 530px;
+   height: auto;
  }
  .content_work_about{
-   
     text-align: center;
  }
 
@@ -43,6 +41,7 @@
 }
 .student__about_message{
     overflow-wrap: break-word;
+    margin-bottom: 10px;
 }
 
 .flex{
@@ -72,5 +71,8 @@
         flex-direction: column;
         justify-content: center;
         margin: 0;
+   }
+   .content_work_image{
+      max-width: 500px;
    }
 }
