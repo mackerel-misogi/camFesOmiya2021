@@ -73,6 +73,8 @@
         margin: 0;
    }
    .content_work_image{
+      width: 100%;
       max-width: 500px;
+      height: auto;
    }
 }
