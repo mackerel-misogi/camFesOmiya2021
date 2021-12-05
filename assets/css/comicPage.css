@@ -44,7 +44,7 @@
     text-decoration: none;
     color: #FFF;
     outline:none;
-    padding: 30px 175px;
+    padding: 30px 0;
 }
 
 .comicPage_image_bg{
@@ -78,5 +78,5 @@
     text-decoration: none;
     color: #FFF;
     outline:none;
-    padding: 30px 175px;
+    padding: 30px 0;
 }
