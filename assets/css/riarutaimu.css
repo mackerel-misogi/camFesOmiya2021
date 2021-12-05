@@ -9,6 +9,7 @@
 }
 .delivery_about_title{
    font-size: 24px;
+   word-wrap: break-word;
 }
 .delivery_about_message{
    font-size:20px;
@@ -25,8 +26,11 @@
 }
 
 .delivery_work_about{
-  
    text-align: center;
+}
+.delivery_work_about_last{
+   text-align: center;
+   margin-bottom: 80px;
 }
 .video {
   position: relative;
