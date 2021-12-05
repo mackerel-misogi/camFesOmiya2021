@@ -50,4 +50,22 @@
         flex-direction: column;
         margin: 0 80px;
     }
+    .plan_box_image{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    br{
+        display: none;
+    }
+    .plan_box1{
+        width: 340px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .plan_box2{
+        width: 340px;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
